@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Borsari Photographer</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+
+</head>
+<button id="backToTop">↑</button>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="immagini/ale-header.jpg" alt="Me">
+    <div class="overlay-text">
+        <h1>ALESSANDRO BORSARI</h1>
+        <h3>PHOTOGRAPHER</h3>
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<section id="portfolio" class="portfolio">
+
+  <!-- SEZIONE 1 -->
+  <div class="portfolio-row">
+    <img src="immagini/fiore_1000x500.jpg" onclick="openModal();currentSlide(1)" class="portfolio-img" alt="">
+    <img src="immagini/milano_1000x500.jpg" onclick="openModal();currentSlide(2)" class="portfolio-img" alt="">
+    <img src="immagini/bologna_1000x500.jpg" onclick="openModal();currentSlide(3)" class="portfolio-img" alt="">
+    <img src="immagini/orologio.jpg" onclick="openModal();currentSlide(4)" class="portfolio-img" alt="">
+  </div>
+
+  <!-- SEZIONE 2 -->
+  <div class="portfolio-row">
+    <img src="immagini/fiori4_1000x500.jpg" onclick="openModal();currentSlide(5)" class="portfolio-img" alt="">
+    <img src="immagini/venezia_1000x500.jpg" onclick="openModal();currentSlide(6)" class="portfolio-img" alt="">
+    <img src="immagini/ronda_1000x500.jpg" onclick="openModal();currentSlide(7)" class="portfolio-img" alt="">
+    <img src="immagini/malaga_1000x500.jpg" onclick="openModal();currentSlide(8)" class="portfolio-img" alt="">
+  </div>
+
+  <!-- SEZIONE 3 -->
+  <div class="portfolio-row">
+    <img src="immagini/fiori_bw_1000x500.jpg" onclick="openModal();currentSlide(9)" class="portfolio-img" alt="">
+    <img src="immagini/colline_1000x500.jpg" onclick="openModal();currentSlide(10)" class="portfolio-img" alt="">
+    <img src="immagini/campanile_1000x500.jpg" onclick="openModal();currentSlide(11)" class="portfolio-img" alt="">
+    <img src="immagini/fiune_1000x500.jpg" onclick="openModal();currentSlide(12)" class="portfolio-img" alt="">
+  </div>
+
+  <!-- SEZIONE 4 -->
+  <div class="portfolio-row">
+    <img src="immagini/fiori3_1000x500.jpg" onclick="openModal();currentSlide(13)" class="portfolio-img" alt="">
+    <img src="immagini/roma_1000x500.jpg" onclick="openModal();currentSlide(14)" class="portfolio-img" alt="">
+    <img src="immagini/rami_1000x500.jpg" onclick="openModal();currentSlide(15)" class="portfolio-img" alt="">
+    <img src="immagini/valencia_1000x500.jpg" onclick="openModal();currentSlide(16)" class="portfolio-img" alt="">
+  </div>
+
+  <!-- SEZIONE 5 -->
+  <div class="portfolio-row">
+    <img src="immagini/palma_1000x500.jpg" onclick="openModal();currentSlide(17)" class="portfolio-img" alt="">
+    <img src="immagini/skyline1000x500.jpg" onclick="openModal();currentSlide(18)" class="portfolio-img" alt="">
+    <img src="immagini/sole_1000x500.jpg" onclick="openModal();currentSlide(19)" class="portfolio-img" alt="">
+    <img src="immagini/fiori2_1000x500.jpg" onclick="openModal();currentSlide(20)" class="portfolio-img" alt="">
+  </div>
+
+  <!-- SEZIONE 6 -->
+  <div class="portfolio-row">
+    <img src="immagini/fiori5_1000x500.jpg" onclick="openModal();currentSlide(21)" class="portfolio-img" alt="">
+    <img src="immagini/fiori7_1000x500.jpg" onclick="openModal();currentSlide(22)" class="portfolio-img" alt="">
+    <img src="immagini/fiori8_1000x500.jpg" onclick="openModal();currentSlide(23)" class="portfolio-img" alt="">
+    <img src="immagini/fiori_1000x500.jpg" onclick="openModal();currentSlide(24)" class="portfolio-img" alt="">
+  </div>
+
+</section>
+
+
+<!-- LIGHTBOX -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">1 / 24</div>
+      <div class="caption">Cosmos flower</div>
+      <img src="immagini/fiore_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">2 / 24</div>
+      <div class="caption">Milano</div>
+      <img src="immagini/milano_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">3 / 24</div>
+      <div class="caption">Two towers, Bologna</div>
+      <img src="immagini/bologna_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">4 / 24</div>
+      <div class="caption">Clock tower, Bologna</div>
+      <img src="immagini/orologio.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">5 / 24</div>
+      <div class="caption">Dhalia</div>
+      <img src="immagini/fiori4_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">6 / 24</div>
+      <div class="caption">Venezia</div>
+      <img src="immagini/venezia_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">7 / 24</div>
+      <div class="caption">Ronda</div>
+      <img src="immagini/ronda_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">8 / 24</div>
+      <div class="caption">Malaga</div>
+      <img src="immagini/malaga_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">9 / 24</div>
+      <div class="caption">Black and White flowers</div>
+      <img src="immagini/fiori_bw_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">10 / 24</div>
+      <div class="caption">Ravenna</div>
+      <img src="immagini/colline_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">11 / 24</div>
+      <div class="caption">Ravenna</div>
+      <img src="immagini/campanile_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">12 / 24</div>
+      <div class="caption">Rimini</div>
+      <img src="immagini/fiune_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">13 / 24</div>
+      <div class="caption">Globeflower</div>
+      <img src="immagini/fiori3_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">14 / 24</div>
+      <div class="caption">Nettuno, Bologna</div>
+      <img src="immagini/roma_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">15 / 24</div>
+      <div class="caption">Modena</div>
+      <img src="immagini/rami_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">16 / 24</div>
+      <div class="caption">Valencia</div>
+      <img src="immagini/valencia_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">17 / 24</div>
+      <div class="caption">Canarian Palm</div>
+      <img src="immagini/palma_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">18 / 24</div>
+      <div class="caption">Bologna Skyline</div>
+      <img src="immagini/skyline1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">19 / 24</div>
+      <div class="caption">Sunset</div>
+      <img src="immagini/sole_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">20 / 24</div>
+      <div class="caption">Buttercup flower</div>
+      <img src="immagini/fiori2_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">21 / 24</div>
+      <div class="caption">Daisy</div>
+      <img src="immagini/fiori5_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">22 / 24</div>
+      <div class="caption">Sky Jasmine</div>
+      <img src="immagini/fiori7_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">23 / 24</div>
+      <div class="caption">Gerbera Daisy</div>
+      <img src="immagini/fiori8_1000x500.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="info-row"></div>
+      <div class="numbertext">24 / 24</div>
+      <div class="caption">Hydrangea</div>
+      <img src="immagini/fiori_1000x500.jpg">
+    </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          
+  </div>
+</div>
+    </div>
+</div>
+
+<section id="about" class="fade-on-scroll">
+  <h2>About Me</h2>
+  <p><em>
+    Born in Ukraine and raised between Bologna and Modena, I grew up exploring the Romagnolo countryside.
+    I love living in the moment and capturing the beauty I encounter in Italy, especially in Emilia Romagna, where my heart belongs, as much as I adore Spain.
+    Working as a gardener allows me to combine my two passions: nature and photography, capturing stunning flowers every day.
+    I am available for any nature-related project, as well as event photography, including weddings and special occasions.
+  </em></p>
+
+  <img src="immagini/tuafoto.jpg" alt="Foto About Me" class="about-image">
+</section>
+
+
+<!-- CONTACT -->
+<div id="contact" class="contact">
+    <h3>Contact </h3>
+     <h3>For inquiries, please fill out the form below or reach me through social media.</h3> 
+   
+    <form action="https://formsubmit.co/e71d0b8b8c859d305b6e28cae58399c6" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="Name" placeholder="Name" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="text" name="Message" placeholder="Message" required>
+    
+    <button type="submit">Send</button>
+</form>
+
+    <div class="social">
+        <a href="https://www.facebook.com/share/15MBHj3uJw1/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/tekno_wine?igsh=MW05bndvNjBvenkwZg==" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>This website was made by Cloe Gatti</p>
+  
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");   
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const aboutSection = document.querySelector(".fade-on-scroll");
+  observer.observe(aboutSection);
+});
+</script>
+
+
+</body>
+</html>
